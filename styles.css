@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  width: 100vw;
+  font-family: 'Kumbh Sans',sans-serif;
+  overflow: hidden;
+}
+.container{
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+
+}
+.container .card{
+  text-align: center;
+}
+.card .profile{
+  border-radius: 50%;
+  border:5px solid white;
+  margin-top: -30px;
+}
+.background-card{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+.text h2{
+  font-size: 20px;
+  color: hsl(229, 23%, 23%);
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.text h2 span {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.text p{
+  font-size: 15px;
+  color: hsl(227, 10%, 46%);
+  margin: 10px 0 30px;
+}
+.text{
+  position: relative;
+}
+.text::before {
+  content: '';
+  width: 103%;
+  height: 1px;
+  background-color: hsl(227, 10%, 46%);
+  position: absolute;
+  left: -5px;
+  bottom: -30px;
+  opacity: 0.3;
+}
+.caption{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 20px;
+  padding: 0 20px;
+}
+.caption h2{
+  font-size: 20px;
+  color: hsl(229, 23%, 23%);
+  margin:5px
+}
+.caption p{
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+}
+.circles{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.c1{
+  position: absolute;
+  top:-590px;
+  left:-300px;
+}
+.c2{
+  position: absolute;
+  bottom: -655px;
+  right: -300px;
+}
+
+@media (max-width:991px) {
+  body{
+    overflow: hidden;
+  }
+  .c1{
+    position: absolute;
+    top:-550px;
+    left:-600px;
+  }
+  .c2{
+    position: absolute;
+    bottom: -655px;
+    right: -500px;
+  }
+}
+@media (max-width:375px) {
+  .card{
+    width: 330px;
+  }
+  body{
+    overflow: hidden;
+  }
+  .c1{
+    position: absolute;
+    top:-650px;
+    left:-800px;
+  }
+  .c2{
+    position: absolute;
+    bottom: -600px;
+    right: -760px;
+  }
+}
